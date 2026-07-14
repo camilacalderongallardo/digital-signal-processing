@@ -12,8 +12,8 @@ The repository implements and evaluates:
 - Matrix-based DFT
 - Recursive radix-2 decimation-in-time FFT
 - Numerical validation against NumPy
-- Runtime comparison illustrating the difference between \(O(N^2)\) DFT
-  methods and \(O(N\log N)\) FFT structure
+- Runtime comparison illustrating the difference between DFT
+  methods and FFT structure
 
 ### Sampling and reconstruction
 
