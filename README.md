@@ -38,53 +38,26 @@ The repository implements and evaluates:
 - Wavelet coefficient thresholding
 - 8x8 block DCT compression with JPEG-style quantization
 - PSNR and retained-coefficient measurements
-
-## Repository structure
-
-```text
-advanced-digital-signal-processing/
-├── dsp/
-│   ├── transforms.py
-│   ├── sampling.py
-│   ├── filters.py
-│   ├── images.py
-│   └── metrics.py
-├── demos/
-│   ├── 01_transform_benchmark.py
-│   ├── 02_sampling_filter_design.py
-│   └── 03_image_processing_compression.py
-├── tests/
-├── outputs/
-├── run_all.py
-└── requirements.txt
-```
-
-The `dsp/` directory contains reusable implementations. The `demos/`
-directory contains engineering experiments that use those implementations
-and produce portfolio-ready results.
+- 
 
 ## Run the complete project
 
-```bash
 python -m venv .venv
-```
 
 Activate the environment and run:
 
-```bash
 pip install -r requirements.txt
 python run_all.py
 python -m pytest
-```
 
 ## Generated results
 
-- `transform_benchmark.png` — direct, matrix, radix-2, and library FFT timing
-- `sampling_reconstruction.png` — sampling-rate and aliasing comparison
-- `filter_magnitude_comparison.png` — FIR and IIR magnitude specifications
-- `group_delay_comparison.png` — phase-related implementation tradeoff
-- `image_filtering_wavelets.png` — spatial filtering and Haar decomposition
-- `dct_compression_tradeoff.png` — image quality versus coefficient retention
+- transform_benchmark.png: direct, matrix, radix-2, and library FFT timing
+- sampling_reconstruction.png: sampling-rate and aliasing comparison
+- filter_magnitude_comparison.png: FIR and IIR magnitude specifications
+- group_delay_comparison.png: phase-related implementation tradeoff
+- image_filtering_wavelets.png: spatial filtering and Haar decomposition
+- dct_compression_tradeoff.png: image quality versus coefficient retention
 
 ## Engineering conclusions
 
