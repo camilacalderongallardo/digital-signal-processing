@@ -38,7 +38,6 @@ The repository implements and evaluates:
 - Wavelet coefficient thresholding
 - 8x8 block DCT compression with JPEG-style quantization
 - PSNR and retained-coefficient measurements
-- 
 
 ## Run the complete project
 
