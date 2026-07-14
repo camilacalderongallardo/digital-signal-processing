@@ -1,11 +1,8 @@
 # Advanced Digital Signal Processing with Python
 
-An upper-division electrical engineering portfolio project demonstrating DSP
-algorithms from mathematical definitions through implementation, validation,
-engineering tradeoff analysis, and application to one-dimensional signals and
-two-dimensional images.
-
-## Why this is more than a filtering demo
+A mini electrical engineering project demonstrating DSP
+algorithms from course mathematical definitions through implementation, validation,
+engineering tradeoff analysis, and application to 1D and 2D signal images.
 
 The repository implements and evaluates:
 
@@ -91,11 +88,8 @@ python -m pytest
 
 ## Engineering conclusions
 
-The project demonstrates that implementation choice affects more than whether
-an algorithm produces the correct answer:
-
-- The FFT obtains the same transform as the direct DFT with dramatically better
-  computational scaling.
+- The FFT obtains the same transform as the direct DFT with better
+  computational scaling. (this is expected)
 - Sampling below twice the highest signal frequency creates irreversible aliasing.
 - FIR filters provide linear-phase behavior at the cost of higher order and delay.
 - IIR filters meet similar magnitude specifications with lower order but nonlinear
@@ -105,7 +99,7 @@ an algorithm produces the correct answer:
 - Wavelet and DCT representations emphasize different spatial and frequency
   characteristics of an image.
 
-## Skills demonstrated
+## Skills
 
 Digital signal processing, Fourier analysis, FFT algorithms, sampling theory,
 sinc interpolation, FIR and IIR design, group-delay analysis, two-dimensional
@@ -115,7 +109,7 @@ Matplotlib, numerical validation, modular Python, and unit testing.
 ## Project origin
 
 This is an independently organized portfolio implementation based on concepts
-studied in upper-division electrical engineering coursework. It uses new
+studied in my undergraduate dsp electrical engineering class. It uses new
 experiments, synthetic inputs, original documentation, reusable modules, and
 independent validation. It does not include assignment prompts, grading
 materials, or instructor-provided solution files.
